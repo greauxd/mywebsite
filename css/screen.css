@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+
+	table {object-fit: fill}
+	table, th {border-collapse: collapse; padding: 10px;}
+	table table {width: auto; background-color: lightgray;}
+	table table th {border: 5px solid black; border-collapse: collapse;}
+
+	div#banner{position: fixed; top: 0px; left: 200px; width: 1000px; background-color: darkcyan; border: 3px solid black; padding: 4px; text-align: center; z-index: 3;}
+
+	div#banner h1{text-align: center;}
+	div#banner img{float: left;}
+
+	div#navigation{position: fixed; top: 100px; left: 400px; background-color: darkcyan; border: 3px solid black; padding: 10px; z-index: 3;}
+
+	div#tools{position: fixed; top: 500px; left: 250px; height: 300px; width: 1000px;}
+	h2#toolsHeader{text-align:center;}
+	div#tools img{height: 25px; width: 25px;}
+
+	div#contents{position: absolute; top: 100px; left: 385px; width: 800px; background-color: cyan; border: 3px solid black; padding: 10px; padding-bottom: 1000px;}
+
+	button#leftButton{position: fixed; top: 650px; height: 50px; width: 25px; border: 3px solid black; border-radius: 5px}
+	button#rightButton {position: fixed; top: 650px; left: 1231px; height: 50px; width: 25px; border: 3px solid black; border-radius: 5px}
+
+	.row1 {height: 100px;}
+	.column1{width: 200px;}
+	.column2{width: 50px;}
+	.column3{width: 300px;}
+	.photo{height: 150px; width: 150px; float: left; padding: 10px;}
+	.logo {width: 75px; height: 75px;}
+	.time {text-align: center;}
+	.csc125{background-color: gray;}
+	.csc162{background-color: slategray;}
+	.work{background-color: #9E78CF}
+	.lunch{background-color: chartreuse;}
+	.validation{background-color: grey;}
+	
+	nav a, nav a:visited{background-color: steelblue; color: black; border: 3px solid black; text-align: center; text-decoration: none; width: 100px; height: 30px; display: inline-block; border-radius: 6px; padding: 5px;}
+
+	nav a:hover, nav a:active{background-color: navy; color: white;}
+
+	body{background: url(https://i.stack.imgur.com/xfn1X.jpg); background-repeat: repeat-x;}
+
+	h1{text-align: left;}
+
+	h4{text-align: left;}
+
+	p{text-align: left;}
+
+	li{text-align: left;}
+
+	legend{text-align: left;}
+
+	fieldset{margin-bottom: 20px}
+
+	input{margin: 0px 5px;}

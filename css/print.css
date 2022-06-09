@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+	table {width: 800pt; height: 500pt;background-color: white; margin: auto;}
+	table, th {padding: 1pt;}
+	table table {background-color: white;}
+	table table th{border: 1pt solid black; border-collapse: collapse; font-family: serif;}
+
+	img {display: none;}
+
+	.row1 {height: 100pt; display: none;}
+	.column1{width: 200pt; display: none;}
+	.column2{width: 100pt; padding: 10pt;}
+	.column3{width: 700pt;}
+	.photo{transform: rotate(90deg); height: 150px; width: 150px;}
+	.logo {width: 75pt; height: 75pt;}
+	.time {text-align: center;}
+	.csc125{background-color: white;}
+	.csc162{background-color: white;}
+	.work{background-color: white;}
+	.lunch{background-color: white;}
+	nav a, nav a:visited{background-color: steelblue; color: black; border: 1px solid black; text-align: center; text-decoration: none; width: 100px; height: 30px; display: none;}
+
+	body{background-color: white;}
+
+	h1{text-align: left;}
+
+	h4{text-align: left;}
+
+	p{text-align: left;}
+
+	li{text-align: left;}
