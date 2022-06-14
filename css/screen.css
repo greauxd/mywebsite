@@ -5,7 +5,7 @@
 	table, th {border-collapse: collapse; padding: 10px;}
 	table table {width: auto; background-color: lightgray;}
 	table table th {border: 5px solid black; border-collapse: collapse;}
-	footer {position: fixed; bottom: 0; right: 0;}
+	footer {bottom: 0; right: 0;}
 
 	div#banner{position: fixed; top: 0px; left: 200px; width: 1000px; background-color: darkcyan; border: 3px solid black; padding: 4px; text-align: center; z-index: 3;}
 
@@ -30,13 +30,9 @@
 	.photo{height: 150px; width: 150px; float: left; padding: 10px;}
 	.logo {width: 75px; height: 75px;}
 	.links {width:50px; height: 50px;}
-	.time {text-align: center;}
-	.csc125{background-color: gray;}
-	.csc162{background-color: slategray;}
-	.work{background-color: #9E78CF}
-	.lunch{background-color: chartreuse;}
 	.validation{background-color: grey;}
-	
+	.heart{height: 5px; width: 5px;}
+
 	nav a, nav a:visited{background-color: steelblue; color: black; border: 3px solid black; text-align: center; text-decoration: none; width: 100px; height: 30px; display: inline-block; border-radius: 6px; padding: 5px;}
 
 	nav a:hover, nav a:active{background-color: navy; color: white;}
