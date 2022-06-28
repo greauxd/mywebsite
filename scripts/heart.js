@@ -1,19 +1,35 @@
 // JavaScript source code
 function heartbeat() {
+
+    //Set id to null
     let id = null;
+
+    //Get element for image
     const elem = document.getElementById("heart");
-    let height = 20 + 'px';
-    let width = 20 + 'px'
+
+    //Default height and width
+    elem.style.height = "20px";
+    elem.style.width = "20px";
+    //Clear interval if any is present
     clearInterval(id);
-    id = setInterval(size, 2);
+    //Set interval delay
+    id = setInterval(function () {
+        shrink(elem);
+        grow(elem);
+    }, 2000);
 
-    function size() {
-        while (height == 20 + 'px' && width == 20 + 'px') {
-            elem.style.height = (height - 5) + 'px';
-            elem.style.width = (width - 5) + 'px';
-
-        if (height == 15 + 'px' && width == 15 + 'px') {
-            elem.style.height = (height + 5) + 'px';
-            elem.style.width = (width + 5) + 'px';
+    function shrink(elem) {
+        //Changes height and width of image
+        if (elem.style.height == "20px" && elem.style.width == "20px") {
+            elem.style.height = "15px";
+            elem.style.width = "15px";
+        }
     }
+
+}
+
+function grow(elem) {
+    if (elem.style.height == "15px" && elem.style.width == "15px") {
+        elem.style.height = '20px';
+        elem.style.width = '20px';
 }
