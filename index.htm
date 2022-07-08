@@ -10,39 +10,7 @@
 	<link rel="stylesheet" href="./css/screen.css" media="screen" type="text/css">
 	<meta charset="utf-8">
 	<title>Homepage</title>
-	<script type="text/javascript">
-		function heartbeat(){
-
-			//Get element for image
-			const elem = document.getElementById("heart");
-
-			//Default height and width
-			elem.style.height = "20px";
-			elem.style.width = "20px";
-			shrink(elem);
-			grow(elem);
-
-		}
-        function shrink(elem) {
-            //Changes height and width of image
-            if (elem.style.height == "20px" && elem.style.width == "20px") {
-                elem.style.height = "15px";
-                elem.style.width = "15px";
-            }
-        }
-
-
-
-		function grow(elem) {
-			if (elem.style.height == "15px" && elem.style.width == "15px") {
-				elem.style.height = '20px';
-				elem.style.width = '20px';
-			}
-		}
-
-            //Set interval delay
-            id = setInterval(heartbeat, 2000);
-	</script>
+	<script src="./scripts/heart.js"></script>
 </head>
 
 <body>
@@ -73,7 +41,8 @@
 
 	<footer>
 		<h3>
-			Made with <img id="heart" class="heart" src="./images/heart.png" alt="heart" onload="heartbeat()" />&nbsp;	&nbsp;
+			
+			Made with &nbsp; <img id="heart" class="heart" src="./images/heart.png" alt="heart" onclick="startbeat()" />&nbsp;	&nbsp;
 			<a href="https://www.linkedin.com/in/darren-greaux/" target="_blank"><img class="links" src="./images/Linkedin-logo.png" alt="LinkedIn" /></a>
 			<a href="https://github.com/greauxd" target="_blank"><img class="links" src="./images/github-logo.png" alt="Github" /></a>
 		</h3>
