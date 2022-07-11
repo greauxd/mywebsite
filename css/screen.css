@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-	body{background-color: dimgrey;}
+	body{background-color: dimgrey; margin: 0;}
 	h1{text-align: left;}
 	h4{text-align: left;}
 	p{text-align: left;}
@@ -22,9 +22,6 @@
 	h2#toolsHeader{text-align:center;}
 	div#tools img{height: 25px; width: 25px;}
 	div#contents{position: absolute; top: 100px; left: 385px; width: 800px; background-color: cyan; border: 3px solid black; padding: 10px; padding-bottom: 1000px;}
-	button#leftButton{position: fixed; top: 650px; height: 50px; width: 25px; border: none; background-color: transparent; font-size: 25px; font-weight: bold;}
-	button#rightButton {position: fixed; top: 650px; left: 1231px; height: 50px; width: 25px; border: none; background-color: transparent; font-size: 25px; font-weight: bold;}
-
 	.row1 {height: 100px;}
 	.column1{width: 200px;}
 	.column2{width: 50px;}
@@ -34,6 +31,18 @@
 	.links {width:50px; height: 50px;}
 	.validation{background-color: grey;}
 	.heart{height: 20px; width: 20px; padding-left: 10px;}
+	.currentImage{height: 40px; width: 40px;}
+	.carousel{width: 50vw; height: 50vh; position: relative;}
+	.carousel-button{position: absolute;top:50%; transform:translateY(-50%); height: 50px; width: 40px; border: none; background-color: rgba(0,0,0,.1);}
+	.carousel-button.prev{left: 1rem;}
+	.carousel-button.next{right: 1rem;}
+	.slide{position: absolute; inset: 0; opacity: 0;}
+	.slide > img{display: block; width: 25%; height: 25%; object-fit: cover; object-position: center;}
+	.slide[data-active]{opacity: 1;}
+	
 
-	nav a, nav a:visited{background-color: steelblue; color: black; border: 3px solid black; text-align: center; text-decoration: none; width: 100px; height: 30px; display: inline-block; border-radius: 6px; padding: 5px;}
-	nav a:hover, nav a:active{background-color: navy; color: white;}
+	nav a, nav a:visited{background-color: rgba(0,0,0,.1); color: black; border: 3px solid black; text-align: center; text-decoration: none; width: 100px; height: 30px; display: inline-block; border-radius: 6px; padding: 5px;}
+	nav a:hover{background-color: rgba(0,0,0,.2); color: white;}
+	nav a:active{background-color: rgba(0, 0, 0, .7);}
+	.carousel-button:hover {color:white; background-color: rgba(0,0,0,.2);}
+	.carousel-button:active {color:white;background-color: rgba(0,0,0,.5);}
