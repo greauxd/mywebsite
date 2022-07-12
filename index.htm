@@ -7,7 +7,8 @@
 	<link rel="stylesheet" href="./css/screen.css" media="screen" type="text/css">
 	<meta charset="utf-8">
 	<title>Homepage</title>
-	<script src="./scripts/heart.js"></script>
+	<script src="./scripts/heart.js" defer></script>
+	<script src="./scripts/tools.js" defer></script>
 </head>
 
 <body>
@@ -30,9 +31,9 @@
 
 			<div id="tools">
 				<h2 id="toolsHeader">Tools I Use</h2>
-				<div class="carousel">
-					<button class="carousel-button prev">&#171;</button>
-					<ul>
+				<div class="carousel" data-carousel>
+					<button class="carousel-button prev" data-carousel-button = "prev">&#171;</button>
+					<ul data-slides>
 						<li class="slide" data-active>
 							<img src="./images/javascript logo.png" alt="Javascript"/>
 						</li>
@@ -40,14 +41,29 @@
 							<img src="./images/java-logo-vert-blk.png" alt="Java"/>
 						</li>
 						<li class="slide">
-							<img src="./images/computer1.jpg"/>
+							<img src="./images/Python_logo.png" alt="Python"/>
+						</li>
+						<li class="slide">
+							<img src="./images/MySQL-Logo.png" alt="SQL"/>
+						</li>
+						<li class="slide">
+							<img src="./images/html logo.png" alt="HTML"/>
+						</li>
+						<li class="slide">
+							<img src="./images/vscode.png" alt="vs-code"/>
+						</li>
+						<li class="slide">
+							<img src="./images/intelliJ.png" alt="IntelliJ"/>
+						</li>
+						<li class="slide">
+							<img src="./images/eclipse.png" alt="Eclipse"/>
 						</li>
 					
 
 
 					</ul>
 				
-				<button class="carousel-button next">&#187;</button>
+				<button class="carousel-button next" data-carousel-button = "next">&#187;</button>
 			</div>
 			</div>
 		</tr>
