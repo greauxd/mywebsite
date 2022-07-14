@@ -1,12 +1,11 @@
 // JavaScript Document
-	var strErrMsg;
+	var strErrMsg = "";
 							
 		function validate_form()
 			{
 				strErrMsg = '<h4>Errors found: </h4>' +  '<ul>' + strErrMsg + '</ul>';
 				notEmpty(document.getElementById('fname'), 'Enter first name');
 				invalidLength(document.getElementById('lname'), 'Enter last name');
-				notChecked(document.getElementById('gender'), 'Select gender');
 				invalidLength(document.getElementById('email'), 'Enter valid email');
 				invalidNumber1(document.getElementById('area'), 'Enter area code');
 				invalidNumber1(document.getElementById('exchange'), 'Enter exchange');
@@ -20,6 +19,7 @@
 							
 					err=document.getElementById('errors'); err.innerHTML = strErrMsg;
 					err.style.visibility="visible";
+					//alert(strErrMsg);
 					strErrMsg = "";
 					return false;
 
@@ -42,20 +42,7 @@
 					elem.style.backgroundColor="#fcc";
 				}
 			}
-			function invalidZip(elem, helperMsg) {
-				elem.style.backgroundColor="white";
-				if(elem.value.length < 5)
-				{
-					strErrMsg = strErrMsg + '<li>' + helperMsg + '</li>' + "\n";
-					elem.style.backgroundColor="#fcc";
-				}
-			}
-			function notChecked(elem, helperMsg) {
-				if(!document.getElementById('male').checked && !document.getElementById('female').checked)
-				{
-					strErrMsg = strErrMsg + '<li>' + helperMsg + '</li>' + "\n";
-				}
-			}
+			
 			
 			function invalidNumber1(elem, helperMsg) {
 				elem.style.backgroundColor="white";

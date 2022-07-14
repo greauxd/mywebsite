@@ -10,7 +10,7 @@
 <meta charset="utf-8">
 <title>Contact Me!</title>
 <style>
-	div#errors {position:absolute;top:265px;left:1120px;visibility:hidden;color:red;border:1px solid red;padding:5px;}
+	div#errors {position:absolute;top:265px;left:850px;visibility:hidden;color:red;border:1px solid red;padding:5px;}
 </style>
 </head>
 
