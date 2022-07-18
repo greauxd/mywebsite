@@ -41,6 +41,7 @@
 	.slide > img{display: block; width: 100%; height: 150px; object-fit: scale-down;}
 	.slide[data-active]{opacity: 1;}
 	.foot{text-align: center;}
+	.projectTitle{border: none; background-color: dimgrey;}
 	
 
 	nav a, nav a:visited{background-color: rgba(0,0,0,.1); color: black; border: 3px solid black; text-align: center; text-decoration: none; width: 100px; height: 30px; display: inline-block; border-radius: 6px; padding: 5px;}
