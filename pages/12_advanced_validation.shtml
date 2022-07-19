@@ -68,6 +68,7 @@
 	</table>
 </div>
 	<footer id="footer">
+		<address>
 		<h3 class="foot">
 			<a href="https://www.linkedin.com/in/darren-greaux/" target="_blank"><img class="links" src="../images/Linkedin-logo.png" alt="LinkedIn" /></a>
 			<a  href="https://github.com/greauxd" target="_blank"><img class="links" src="../images/github-logo.png" alt="Github" /></a>
@@ -75,6 +76,7 @@
 		<h3 class = "foot">
 			Made with &nbsp; <img class="heart" src="../images/heart.png" alt="heart"/>&nbsp;	&nbsp; by Darren Greaux
 		</h3>
+		</address>
 	</footer>
 </div>
 </body>
