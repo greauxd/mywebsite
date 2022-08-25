@@ -26,7 +26,6 @@
 			<th class = "column1">
 				<nav>
 					<dl><a href = "../index.htm">Home</a></dl>
-					<dl><a href = "./2_html_bio.htm">Biography</a></dl>
 					<dl><a href = "./3_html_resume.htm">Resume</a></dl>
 					<dl><a href="./13_projects.htm">Projects</a></dl>
 				</nav>

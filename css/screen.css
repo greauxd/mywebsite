@@ -18,13 +18,15 @@
 	div#banner h1{text-align: center;}
 	div#banner img{float: left;}
 	div#navigation{position: fixed; top: 100px; left: 400px; background-color: darkcyan; border: 3px solid black; padding: 10px; z-index: 3;}
-	div#tools{position: absolute; top: 500px; left: 250px; height: 20vh; width: 50%; padding-bottom: 2.5rem;}
+	div#tools{position: absolute; top: 500px; left: 250px; height: 20vh; width: 75%; padding-bottom: 2.5rem;}
 	h2#toolsHeader{text-align:center;}
+	div#bio{position: absolute; top: 1000px; left: 250px; width: auto;}
 		
 	.row1 {height: 100px;}
 	.column1{width: 200px;}
 	.column2{width: 50px;}
 	.column3{width: 300px;}
+	.bioDescription{font-weight: bold; padding-right: 10%;}
 	.page{position: relative; min-height: 100vh;}
 	.content{padding-bottom: 2.5rem;}
 	.photo{height: 150px; width: 150px; float: left;}
