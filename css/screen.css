@@ -8,27 +8,28 @@
 	legend{text-align: left;}
 	table {object-fit: fill}
 	table, th {border-collapse: collapse; padding: 10px;}
-	table table {width: auto; background-color: rgba(250,250,250,.1);}
 	table table th {border: 5px solid black; border-collapse: collapse;}
 	fieldset{margin-bottom: 20px}
 	input{margin: 0px 5px;}
 	
-	#footer {position: absolute; bottom: 0; width: 100%; height: 2.5rem;}
+	#page{position: relative; min-height: 100vh; min-width: 100vw;}
+	#resume{width: auto; background-color: rgb(250, 250, 250);}
+	#content{padding-bottom: 7.5rem;}
+	#footer {position: absolute; bottom: 0; width: 100%; height: 7.5rem; background-color: rgba(250,250,250,.5);}
 	div#banner{position: fixed; top: 0px; left: 200px; width: 1000px; background-color: darkcyan; border: 3px solid black; padding: 4px; text-align: center; z-index: 3;}
 	div#banner h1{text-align: center;}
 	div#banner img{float: left;}
 	div#navigation{position: fixed; top: 100px; left: 400px; background-color: darkcyan; border: 3px solid black; padding: 10px; z-index: 3;}
-	div#tools{position: absolute; top: 500px; left: 250px; height: 20vh; width: 75%; padding-bottom: 2.5rem;}
+	div#tools{position: relative; margin-top: 40px; margin-left: 100px; height: 20vh; width: 75%; padding-bottom: 2.5rem;}
 	h2#toolsHeader{text-align:center;}
-	div#bio{position: absolute; top: 1000px; left: 250px; width: auto;}
+	div#bio{position: relative; top: 50px; padding-bottom: 50px; width: auto;}
+	div#errors {position:absolute;top:265px;left:850px;visibility:hidden;color:red;border:1px solid red;padding:5px;}
 		
 	.row1 {height: 100px;}
 	.column1{width: 200px;}
 	.column2{width: 50px;}
 	.column3{width: 300px;}
 	.bioDescription{font-weight: bold; padding-right: 10%;}
-	.page{position: relative; min-height: 100vh;}
-	.content{padding-bottom: 2.5rem;}
 	.photo{height: 150px; width: 150px; float: left;}
 	.logo {width: 75px; height: 75px;}
 	.links {width:50px; height: 50px;}
@@ -44,13 +45,16 @@
 	.slide[data-active]{opacity: 1;}
 	.foot{text-align: center;}
 	.projectTitle{border: none; background-color: dimgrey;}
+	.carousel-button:hover {color:white; background-color: rgba(0,0,0,.2);}
+	.carousel-button:active {color:white;background-color: rgba(0,0,0,.5);}
+	.projectScreenshot{height: 250px; width: 300px;}
+	.projectDescription{height: 150px; width: 325px;}
 	
 
 	nav a, nav a:visited{background-color: rgba(0,0,0,.1); color: black; border: 3px solid black; text-align: center; text-decoration: none; width: 100px; height: 30px; display: inline-block; border-radius: 6px; padding: 5px;}
 	nav a:hover{background-color: rgba(0,0,0,.2); color: white;}
 	nav a:active{background-color: rgba(0, 0, 0, .7);}
-	.carousel-button:hover {color:white; background-color: rgba(0,0,0,.2);}
-	.carousel-button:active {color:white;background-color: rgba(0,0,0,.5);}
+
 
 	.heart{height: 20px; width: 20px; transform: scale(1); animation: pulse 1s linear infinite;}
 	@keyframes pulse {

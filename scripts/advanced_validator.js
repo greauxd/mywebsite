@@ -1,28 +1,58 @@
 // JavaScript Document
 	var strErrMsg = "";
+
+	var fName = document.getElementById("fname");
+	var lName = document.getElementById("lname");
+	var email = document.getElementById("email");
+	var areaCode = document.getElementById("area");
+	var exchange = document.getElementById("exchange");
+	var phoneNumber = document.getElementById("phone-number");
+	var message = document.getElementById("message");
+
+	var data = new FormData(document.getElementById("validation"));
 							
 		function validate_form()
 			{
-				strErrMsg = '<h4>Errors found: </h4>' +  '<ul>' + strErrMsg + '</ul>';
-				notEmpty(document.getElementById('fname'), 'Enter first name');
-				invalidLength(document.getElementById('lname'), 'Enter last name');
-				invalidLength(document.getElementById('email'), 'Enter valid email');
-				invalidNumber1(document.getElementById('area'), 'Enter area code');
-				invalidNumber1(document.getElementById('exchange'), 'Enter exchange');
-				invalidNumber2(document.getElementById('phone-number'), 'Enter number');
+				notEmpty(fName, 'Enter first name');
+				invalidLength(lName, 'Enter last name');
+				invalidLength(email, 'Enter valid email');
+				invalidNumber1(areaCode, 'Enter area code');
+				invalidNumber1(exchange, 'Enter exchange');
+				invalidNumber2(phoneNumber, 'Enter number');
+				if(strErrMsg != "")
+					{
+					strErrMsg = '<h4>Errors found: </h4>' +  '<ul>' + strErrMsg + '</ul>';
+					}
+					else{
+						fetch('../scripts/sendMail.php', {method: 'POST'})
+							.then(response => response.text())
+							.then(data => {
+								console.log(data);
+							})
+							.catch(error => {
+								console.error('Error:', error);
+							});
+							console.log("Done");
+						fName.value = "";
+						lName.value = "";
+						email.value = "";
+						areaCode.value = "";
+						exchange.value = "";
+						phoneNumber.value = "";
+						message.value = "";
+					}
 							
 				if(strErrMsg == "") {		
-				var err=document.getElementById('errors'); err.innerHTML=strErrMsg;
+				var err=document.getElementById('errors');
+				err.innerHTML=strErrMsg;
 				err.style.visibility="hidden";
 					return false;
 				}
 							
 					err=document.getElementById('errors'); err.innerHTML = strErrMsg;
 					err.style.visibility="visible";
-					//alert(strErrMsg);
 					strErrMsg = "";
 					return false;
-
 			}
 							
 			function notEmpty(elem, helperMsg) {

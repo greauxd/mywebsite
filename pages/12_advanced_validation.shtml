@@ -9,14 +9,11 @@
 	<link rel = "stylesheet" href ="../css/screen.css" media = "screen" type = "text/css">
 <meta charset="utf-8">
 <title>Contact Me!</title>
-<style>
-	div#errors {position:absolute;top:265px;left:850px;visibility:hidden;color:red;border:1px solid red;padding:5px;}
-</style>
 </head>
 
 <body>
-	<div class="page">
-		<div class="content">	
+	<div id="page">
+		<div id="content" >	
 	<table>
 		<tr class = "row1">
 			<th class = "column1"><a href="../index.htm"><img class="logo" src="../images/computer1.jpg" alt="Computer" /></a></th>
@@ -32,7 +29,7 @@
 			</th>
 			<th>
 
-			<fieldset class = "validation">
+			<fieldset id = "validation" class = "validation">
 
 			<fieldset>
 				<legend>Personal Information</legend>
@@ -56,7 +53,7 @@
 			 			</script>
 			<div id = "errors">&nbsp;</div>
 			<form onsubmit = "return validate_form()">
-				<p><input type = "submit" value = "Validate Form"></p>
+				<p><input type = "submit" value = "Submit"></p>
  			</form>
 
 			</fieldset>
