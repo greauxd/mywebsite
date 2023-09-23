@@ -28,38 +28,42 @@
 				</nav>
 			</th>
 			<th>
+		<form action="https://formsubmit.co/cd201533410f8895585d211a90d4805f" method="POST">
+			
+			<!-- Honeypot to prevent unnecessary spam -->
+			<input type="text" name="_honey" style="display: none;">
 
+			<!-- Disables Captcha for FormSubmit -->
+			<input type="hidden" name="_captcha" value="false">
+
+			<input type="hidden" name="_next" value="https://greauxd.github.io/mywebsite/pages/12_advanced_validation.shtml">
+			
 			<fieldset id = "validation" class = "validation">
 
 			<fieldset>
 				<legend>Personal Information</legend>
-				<p>Name: <input type = "text" id = "fname" name = "first_name" size = "8" placeholder = "First"><input type = "text" id = "lname" name = "last_name" size = "8" placeholder = "Last"></p>
+				<p>Name: <input type = "text" id = "fname" name = "First&nbsp;Name" size = "8" placeholder = "First" required><input type = "text" id = "lname" name = "Last&nbsp;Name" size = "8" placeholder = "Last" required></p>
 
 			</fieldset>
 
 			<fieldset>
 				<legend>Contact Information</legend>
-				<p>Email: <input type = "email" id = "email" name = "email" size = "20" placeholder = "Email"></p>
-				<p>Phone Number: (<input type = "text" id = "area" name = "area" size = "1">)-<input type = "text" id = "exchange" name = "exchange" size = "1">-<input type = "text" id = "phone-number" name = "phone-number" size = "1"></p>
+				<p>Email: <input type = "email" id = "email" name = "Email" size = "20" placeholder = "Email" required></p>
+				<p>Phone Number: <input type = "tel" id = "phone" name = "Phone&nbsp;Number" size = "10"></p>
 
 			</fieldset>
 
 			<fieldset>
 				<legend>Message</legend>
-				<textarea id = "message" rows = "4" cols = "60" placeholder = "Please leave a brief message"></textarea>
+				<textarea id = "message" name="Message" rows = "4" cols = "60" placeholder = "Please leave a brief message" required></textarea>
 
-						<script src = "../scripts/advanced_validator.js" type = "text/javascript">
-
-			 			</script>
-			<div id = "errors">&nbsp;</div>
-			<form onsubmit = "return validate_form()">
 				<p><input type = "submit" value = "Submit"></p>
- 			</form>
+ 
 
 			</fieldset>
 
 			</fieldset>
-
+		</form>
 			</th>
 		</tr>
 	</table>
