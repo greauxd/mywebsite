@@ -1,9 +1,6 @@
 <!doctype html>
 <!--Name: Darren Greaux
-	Date: 11/25/19
-	Section 1
-	PL12
-	Program Description: This is my html form with advanced validation-->
+	Page Description: This is my html contact form-->
 <html>
 <head>
 	<link rel = "stylesheet" href ="../css/screen.css" media = "screen" type = "text/css">
@@ -16,7 +13,7 @@
 		<div id="content" >	
 	<table>
 		<tr class = "row1">
-			<th class = "column1"><a href="../index.htm"><img class="logo" src="../images/computer1.jpg" alt="Computer" /></a></th>
+			<th class = "column1"><a href="../index.htm"><img class="logo" src="../images/Headshot.jpg" alt="Headshot" /></a></th>
 		  <th><h1>Contact Me!</h1></th>
 		</tr>
 		<tr>
