@@ -19,9 +19,9 @@
 		<tr>
 			<th class = "column1">
 				<nav>
-					<dl><a href = "../index.htm">Home</a></dl>
-					<dl><a href = "./3_html_resume.htm">Resume</a></dl>
-					<dl><a href="./13_projects.htm">Projects</a></dl>
+					<dl><a class="menu" href = "../index.htm">Home</a></dl>
+					<dl><a class="menu" href = "./3_html_resume.htm">Resume</a></dl>
+					<dl><a class="menu" href="./13_projects.htm">Projects</a></dl>
 				</nav>
 			</th>
 			<th>
